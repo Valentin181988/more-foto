@@ -1,0 +1,99 @@
+.more-foto__items {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.backdrop__more-photo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(43, 43, 43, 0.8);
+  backdrop-filter: blur(4px);
+
+  transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal__more-photo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 906px;
+  height: 605px;
+  transform: translate(-50%, -50%);
+}
+
+.close-btn {
+  position: absolute;
+  top: -70px;
+  right: -70px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.close-btn__icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+  transition: fill 250ms var(--cubic);
+
+  .close-btn:focus &,
+  .close-btn:hover & {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.previous-btn {
+  position: absolute;
+  top: 50%;
+  left: -86px;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.previous-btn__icon {
+  width: 42px;
+  height: 42px;
+  fill: #ffffff;
+  transition: fill 250ms var(--cubic);
+
+  .previous-btn:focus &,
+  .previous-btn:hover & {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.next-btn {
+  position: absolute;
+  top: 50%;
+  right: -86px;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.next-btn__icon {
+  width: 42px;
+  height: 42px;
+  fill: #ffffff;
+  transition: fill 250ms var(--cubic);
+
+  .next-btn:focus &,
+  .next-btn:hover & {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
