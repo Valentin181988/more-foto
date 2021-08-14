@@ -99,28 +99,6 @@ img {
   }
 }
 
-.container {
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    width: 1062px;
-  }
-}
-
 .logo {
   font-family: inherit;
   font-style: inherit;
@@ -961,22 +939,72 @@ img {
   }
 }
 
-/*.more-foto__items {
-  display: grid;
-  gap: 32px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-}*/
-.more-foto__items {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+.container {
+  margin: 0 auto;
 }
 
-.more-foto__item {
-  margin-top: 30px;
-  margin-left: 30px;
+@media screen and (max-width: 767px) {
+  .container {
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1062px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.more-foto__items {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .more-foto__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .more-foto__items {
+    margin-top: -32px;
+    margin-left: -32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .more-foto__item:not(:first-child) {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .more-foto__item {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .more-foto__item {
+    margin-top: 32px;
+    margin-left: 32px;
+  }
 }
 
 .backdrop__more-photo {
@@ -1132,10 +1160,15 @@ img {
 }
 
 .open__btn {
-  display: inline-block;
-  width: 100px;
-  height: 50px;
-  background-color: violet;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .hide {
+    display: none;
+  }
 }
 
 .modal-form__modal-btn {

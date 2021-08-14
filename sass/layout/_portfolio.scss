@@ -1,19 +1,54 @@
-/*.more-foto__items {
-  display: grid;
-  gap: 32px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-}*/
+.container {
+  margin: 0 auto;
+
+  @media screen and (max-width: 767px) {
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1062px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .more-foto__items {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+  @media screen and (min-width: 1444px) {
+    margin-top: -32px;
+    margin-left: -32px;
+  }
+}
+
+.more-foto__item:not(:first-child) {
+  @media screen and (max-width: 767px) {
+    margin-top: 16px;
+  }
 }
 
 .more-foto__item {
-  margin-top: 30px;
-  margin-left: 30px;
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  @media screen and (min-width: 1444px) {
+    margin-top: 32px;
+    margin-left: 32px;
+  }
 }
 
 .backdrop__more-photo {
@@ -144,8 +179,13 @@
 }
 
 .open__btn {
-  display: inline-block;
-  width: 100px;
-  height: 50px;
-  background-color: violet;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.hide {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
