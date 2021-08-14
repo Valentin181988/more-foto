@@ -1,8 +1,19 @@
-.more-foto__items {
+/*.more-foto__items {
   display: grid;
   gap: 32px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+}*/
+.more-foto__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.more-foto__item {
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 .backdrop__more-photo {
