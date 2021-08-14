@@ -80,15 +80,36 @@
         </section>
 
         <div class="backdrop__more-photo is-hidden" data-modal>
+            <button type="button" class="close-btn" data-modal-close>
+                <svg class="close-btn__icon">
+                    <use href="./images/sprite.svg#icon-Vector"></use>
+                </svg>
+            </button>
             <div class="modal__more-photo">
                 <div class="modal__more-photo_image">
-                    <img src="./images/projects/modal/rep2_press_15x10_high23 2.jpg" alt="lamp">
+                <picture>
+                    <source media="(min-width: 1444px)"
+                        srcset="./images/projects/modal/desktop/lamps_modal_desk.webp 1x, ./images/projects/modal/desktop/lamps_modal_desk@2x.webp 2x"
+                        type="image/webp">
+                    <source media="(min-width: 1444px)"
+                        srcset="./images/projects/modal/desktop/lamps_modal_desk.jpg 1x, ./images/projects/modal/desktop/lamps_modal_desk@2x.jpg 2x">
+                
+                    <source media="(min-width: 768px)"
+                        srcset="./images/projects/modal/tablet/lamps_modal_tab.webp 1x, ./images/projects/modal/tablet/lamps_modal_tab@2x.webp 2x"
+                        type="image/webp">
+                    <source media="(min-width: 768px)"
+                        srcset="./images/projects/modal/tablet/lamps_modal_tab.jpg 1x, ./images/projects/modal/tablet/lamps_modal_tab@2x.jpg 2x">
+                
+                    <source media="(min-width: 280px)"
+                        srcset="./images/projects/modal/mob/lamps_modal_mob.webp 1x, ./images/projects/modal/mob/lamps_modal_mob@2x.webp 2x"
+                        type="image/webp">
+                    <source media="(min-width: 280px)"
+                        srcset="./images/projects/modal/mob/lamps_modal_mob.jpg 1x, ./images/projects/modal/mob/lamps_modal_mob@2x.jpg 2x">
+                
+                    <img src="./images/projects/modal/desktop/lamps_modal_desk.jpg" alt="lamps" />
+                </picture>
                 </div>
-                <button type="button" class="close-btn" data-modal-close>
-                    <svg class="close-btn__icon">
-                        <use href="./images/sprite.svg#icon-Vector"></use>
-                    </svg>
-                </button>
+                
                 <button type="button" class="previous-btn">
                     <svg class="previous-btn__icon">
                         <use href="./images/sprite.svg#icon-previous"></use>
