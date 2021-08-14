@@ -1023,8 +1023,8 @@ img {
 }
 
 .close-btn__icon {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   fill: #ffffff;
   transition: fill 250ms var(--cubic);
 }
@@ -1032,6 +1032,20 @@ img {
 .close-btn:focus .close-btn__icon,
 .close-btn:hover .close-btn__icon {
   fill: rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (min-width: 768px) {
+  .close-btn__icon {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .close-btn__icon {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .previous-btn__icon,
