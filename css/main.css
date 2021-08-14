@@ -1034,46 +1034,78 @@ img {
   fill: rgba(255, 255, 255, 0.3);
 }
 
-.previous-btn {
-  position: absolute;
-  top: 50%;
-  left: -86px;
-  border: none;
-  background: transparent;
-  padding: 0;
-}
-
-.previous-btn__icon {
-  width: 42px;
-  height: 42px;
+.previous-btn__icon,
+.next-btn__icon {
+  width: 10px;
+  height: 10px;
   fill: #ffffff;
   transition: fill 250ms var(--cubic);
 }
 
 .previous-btn:focus .previous-btn__icon,
-.previous-btn:hover .previous-btn__icon {
+.previous-btn:hover .previous-btn__icon, .previous-btn:focus
+.next-btn__icon,
+.previous-btn:hover
+.next-btn__icon {
   fill: rgba(255, 255, 255, 0.3);
 }
 
-.next-btn {
+@media screen and (min-width: 768px) {
+  .previous-btn__icon,
+  .next-btn__icon {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .previous-btn__icon,
+  .next-btn__icon {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.previous-btn {
   position: absolute;
   top: 50%;
-  right: -86px;
+  left: -20px;
   border: none;
   background: transparent;
   padding: 0;
 }
 
-.next-btn__icon {
-  width: 42px;
-  height: 42px;
-  fill: #ffffff;
-  transition: fill 250ms var(--cubic);
+@media screen and (min-width: 768px) {
+  .previous-btn {
+    left: -46px;
+  }
 }
 
-.next-btn:focus .next-btn__icon,
-.next-btn:hover .next-btn__icon {
-  fill: rgba(255, 255, 255, 0.3);
+@media screen and (min-width: 1444px) {
+  .previous-btn {
+    left: -86px;
+  }
+}
+
+.next-btn {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .next-btn {
+    right: -46px;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .next-btn {
+    right: -86px;
+  }
 }
 
 .open__btn {
