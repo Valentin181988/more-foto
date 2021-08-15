@@ -89,6 +89,11 @@ img {
   padding: 0;
 }
 
+.system-uicons_loader__btn:hover .system-uicons_loader__icon,
+.system-uicons_loader__btn:focus .system-uicons_loader__icon {
+  fill: tomato;
+}
+
 .system-uicons_loader__more-photo__container {
   text-align: center;
   width: 100%;
