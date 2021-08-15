@@ -967,6 +967,39 @@ img {
   }
 }
 
+.more-foto_title {
+  margin-bottom: 40px;
+}
+
+.system-uicons_loader__icon {
+  width: 45px;
+  height: 45px;
+  padding: 0;
+}
+
+.system-uicons_loader__btn {
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-top: 32px;
+  margin-bottom: 76px;
+}
+
+@media screen and (min-width: 768px) {
+  .system-uicons_loader__btn {
+    margin-bottom: 52px;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .system-uicons_loader__btn {
+    margin-top: 56px;
+    margin-bottom: 100px;
+  }
+}
+
 .more-foto__items {
   display: block;
 }
@@ -991,6 +1024,10 @@ img {
   .more-foto__item:not(:first-child) {
     margin-top: 16px;
   }
+}
+
+.more-foto__item:hover, .more-foto__item:focus {
+  background-color: tomato;
 }
 
 @media screen and (min-width: 768px) {
@@ -1101,6 +1138,14 @@ img {
   fill: rgba(255, 255, 255, 0.3);
 }
 
+.next-btn:focus .previous-btn__icon,
+.next-btn:hover .previous-btn__icon, .next-btn:focus
+.next-btn__icon,
+.next-btn:hover
+.next-btn__icon {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
 @media screen and (min-width: 768px) {
   .previous-btn__icon,
   .next-btn__icon {
@@ -1124,6 +1169,7 @@ img {
   border: none;
   background: transparent;
   padding: 0;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -1145,6 +1191,7 @@ img {
   border: none;
   background: transparent;
   padding: 0;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -1160,6 +1207,7 @@ img {
 }
 
 .open__btn {
+  cursor: pointer;
   border: none;
   background-color: transparent;
   padding: 0;

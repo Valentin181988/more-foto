@@ -20,6 +20,36 @@
   }
 }
 
+.more-foto_title {
+  margin-bottom: 40px;
+}
+
+.system-uicons_loader__icon {
+  width: 45px;
+  height: 45px;
+  padding: 0;
+}
+
+.system-uicons_loader__btn {
+  display: inline-block;
+
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-top: 32px;
+  margin-bottom: 76px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 52px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    margin-top: 56px;
+    margin-bottom: 100px;
+  }
+}
+
 .more-foto__items {
   display: block;
   @media screen and (min-width: 768px) {
@@ -41,6 +71,11 @@
 }
 
 .more-foto__item {
+  &:hover,
+  &:focus {
+    background-color: tomato;
+  }
+
   @media screen and (min-width: 768px) {
     margin-top: 20px;
     margin-left: 20px;
@@ -134,6 +169,11 @@
     fill: rgba(255, 255, 255, 0.3);
   }
 
+  .next-btn:focus &,
+  .next-btn:hover & {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+
   @media screen and (min-width: 768px) {
     width: 26px;
     height: 26px;
@@ -151,6 +191,7 @@
   border: none;
   background: transparent;
   padding: 0;
+  cursor: pointer;
 
   @media screen and (min-width: 768px) {
     left: -46px;
@@ -168,6 +209,7 @@
   border: none;
   background: transparent;
   padding: 0;
+  cursor: pointer;
 
   @media screen and (min-width: 768px) {
     right: -46px;
@@ -179,6 +221,7 @@
 }
 
 .open__btn {
+  cursor: pointer;
   border: none;
   background-color: transparent;
   padding: 0;
