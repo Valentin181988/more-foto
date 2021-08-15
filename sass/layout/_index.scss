@@ -80,11 +80,6 @@
 }
 
 .more-foto__item {
-  &:hover,
-  &:focus {
-    outline: 1px solid orange;
-  }
-
   @media screen and (min-width: 768px) {
     margin-top: 20px;
     margin-left: 20px;
@@ -104,7 +99,8 @@
   background-color: rgba(43, 43, 43, 0.8);
   backdrop-filter: blur(4px);
 
-  transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -148,7 +144,7 @@
   width: 10px;
   height: 10px;
   fill: #ffffff;
-  transition: fill 250ms var(--cubic);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   .close-btn:focus &,
   .close-btn:hover & {
@@ -171,7 +167,7 @@
   width: 10px;
   height: 10px;
   fill: #ffffff;
-  transition: fill 250ms var(--cubic);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   .previous-btn:focus &,
   .previous-btn:hover & {
@@ -234,11 +230,13 @@
   border: none;
   background-color: transparent;
   padding: 0;
+  transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .open__btn:hover,
 .open__btn:focus {
-  outline: 1px solid tomato;
+  outline: 1px solid;
+  outline-color: #487996;
 }
 
 .hide {
