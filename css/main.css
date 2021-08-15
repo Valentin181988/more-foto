@@ -327,7 +327,7 @@ img {
   outline-color: #487996;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .hide {
     display: none;
   }
