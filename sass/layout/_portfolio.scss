@@ -1,4 +1,4 @@
-.container {
+.more-photo__container {
   margin: 0 auto;
 
   @media screen and (max-width: 767px) {
@@ -30,7 +30,7 @@
   padding: 0;
 }
 
-.system-uicons_loader__container {
+.system-uicons_loader__more-photo__container {
   text-align: center;
   width: 100%;
 }
@@ -77,7 +77,7 @@
 .more-foto__item {
   &:hover,
   &:focus {
-    background-color: tomato;
+    outline: 1px solid orange;
   }
 
   @media screen and (min-width: 768px) {

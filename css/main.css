@@ -221,13 +221,13 @@ img {
   border-bottom: 1px solid var(--line);
 }
 
-.header-container {
+.header-more-photo__container {
   display: flex;
   align-items: center;
 }
 
 @media screen and (max-width: 767px) {
-  .header-container {
+  .header-more-photo__container {
     justify-content: space-between;
   }
 }
@@ -425,19 +425,19 @@ img {
   padding: 10px 32px;
 }
 
-.hero-container {
+.hero-more-photo__container {
   width: 100%;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
-  .hero-container {
+  .hero-more-photo__container {
     width: 360px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .hero-container {
+  .hero-more-photo__container {
     width: 696px;
   }
 }
@@ -939,12 +939,12 @@ img {
   }
 }
 
-.container {
+.more-photo__container {
   margin: 0 auto;
 }
 
 @media screen and (max-width: 767px) {
-  .container {
+  .more-photo__container {
     width: 320px;
     padding-left: 20px;
     padding-right: 20px;
@@ -952,7 +952,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .more-photo__container {
     width: 768px;
     padding-left: 57px;
     padding-right: 57px;
@@ -960,7 +960,7 @@ img {
 }
 
 @media screen and (min-width: 1440px) {
-  .container {
+  .more-photo__container {
     width: 1062px;
     padding-left: 0;
     padding-right: 0;
@@ -977,7 +977,7 @@ img {
   padding: 0;
 }
 
-.system-uicons_loader__container {
+.system-uicons_loader__more-photo__container {
   text-align: center;
   width: 100%;
 }
@@ -1032,7 +1032,7 @@ img {
 }
 
 .more-foto__item:hover, .more-foto__item:focus {
-  background-color: tomato;
+  outline: 1px solid orange;
 }
 
 @media screen and (min-width: 768px) {
@@ -1397,7 +1397,7 @@ img {
   }
 }
 
-.mobile-menu__container {
+.mobile-menu__more-photo__container {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -1407,7 +1407,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .mobile-menu__container {
+  .mobile-menu__more-photo__container {
     width: 480px;
   }
 }
