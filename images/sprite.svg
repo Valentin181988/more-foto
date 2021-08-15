@@ -14,14 +14,14 @@
 </symbol>
 
 <symbol id="icon-system-uicons_loader" viewBox="0 0 31 32">
-<path fill="none" stroke="#487996" style="stroke: var(--color1, #487996)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.6957" d="M15.652 5.277v2.981"></path>
-<path fill="none" stroke="#487996" style="stroke: var(--color1, #487996)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.6957" d="M23.106 8.258l-2.236 2.236"></path>
-<path fill="none" stroke="#487996" style="stroke: var(--color1, #487996)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.6957" d="M8.199 8.258l2.236 2.236"></path>
-<path fill="none" stroke="#487996" style="stroke: var(--color1, #487996)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.6957" d="M15.652 26.146v-2.981"></path>
-<path fill="none" stroke="#487996" style="stroke: var(--color1, #487996)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.6957" d="M23.106 23.165l-2.236-2.236"></path>
-<path fill="none" stroke="#487996" style="stroke: var(--color1, #487996)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.6957" d="M8.199 23.165l2.236-2.236"></path>
-<path fill="none" stroke="#487996" style="stroke: var(--color1, #487996)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.6957" d="M5.217 15.711h2.981"></path>
-<path fill="none" stroke="#487996" style="stroke: var(--color1, #487996)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.6957" d="M23.106 15.711h2.981"></path>
+<path  d="M15.652 5.277v2.981"></path>
+<path  d="M23.106 8.258l-2.236 2.236"></path>
+<path  d="M8.199 8.258l2.236 2.236"></path>
+<path  d="M15.652 26.146v-2.981"></path>
+<path  d="M23.106 23.165l-2.236-2.236"></path>
+<path  d="M8.199 23.165l2.236-2.236"></path>
+<path  d="M5.217 15.711h2.981"></path>
+<path  d="M23.106 15.711h2.981"></path>
 </symbol>
 
 </defs>

@@ -343,10 +343,12 @@ img {
   width: 45px;
   height: 45px;
   padding: 0;
+  stroke: #487996;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .system-uicons_loader__btn:hover .system-uicons_loader__icon,
 .system-uicons_loader__btn:focus .system-uicons_loader__icon {
-  fill: tomato;
+  stroke: rgba(0, 140, 239, 0.6);
 }
 /*# sourceMappingURL=main.css.map */
