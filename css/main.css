@@ -71,7 +71,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1444px) {
   .more-photo__container {
     width: 1062px;
     padding-left: 0;
