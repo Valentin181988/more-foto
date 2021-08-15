@@ -236,6 +236,11 @@
   padding: 0;
 }
 
+.open__btn:hover,
+.open__btn:focus {
+  outline: 1px solid tomato;
+}
+
 .hide {
   @media screen and (max-width: 768px) {
     display: none;
