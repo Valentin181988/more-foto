@@ -5,8 +5,8 @@
 
   @media screen and (min-width: 768px) {
     width: 690px;
-    padding-left: 19.5px;
-    padding-right: 19.5px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media screen and (min-width: 1444px) {
@@ -62,12 +62,12 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -20px;
-    margin-left: -20px;
+    margin-top: -19.5px;
+    margin-left: -19.5px;
   }
   @media screen and (min-width: 1444px) {
-    margin-top: -32px;
-    margin-left: -32px;
+    margin-top: -31px;
+    margin-left: -31px;
   }
 }
 
@@ -79,12 +79,12 @@
 
 .more-foto__item {
   @media screen and (min-width: 768px) {
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 19.5px;
+    margin-left: 19.5px;
   }
   @media screen and (min-width: 1444px) {
-    margin-top: 32px;
-    margin-left: 32px;
+    margin-top: 31px;
+    margin-left: 31px;
   }
 }
 
@@ -268,5 +268,132 @@
   .system-uicons_loader__btn:hover &,
   .system-uicons_loader__btn:focus & {
     stroke: rgba(0, 140, 239, 0.6);
+  }
+}
+
+.more-photo {
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .drop-11,
+  .drop-12 {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    background-color: #ffffff;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    z-index: -1;
+  }
+
+  .drop-11 {
+    top: -40px;
+    left: -15px;
+    border-radius: 0px 0px 0px 35px;
+  }
+
+  .drop-12 {
+    top: 0px;
+    right: -25px;
+    border-radius: 25px 0px;
+    transform: rotate(90deg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1443px) {
+  .drop-7,
+  .drop-8,
+  .drop-9,
+  .drop-10 {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    background-color: #ffffff;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    z-index: -1;
+  }
+  .drop-7 {
+    top: 90px;
+    left: -10px;
+    border-radius: 0px 0px 0px 35px;
+  }
+
+  .drop-8 {
+    top: 350px;
+    left: -60px;
+    border-radius: 72px;
+  }
+
+  .drop-9 {
+    top: 54px;
+    right: -7px;
+    border-radius: 25px 0px;
+    transform: rotate(90deg);
+  }
+
+  .drop-10 {
+    top: 400px;
+    right: -7px;
+    border-radius: 25px 0px;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .drop-1,
+  .drop-2,
+  .drop-3,
+  .drop-4,
+  .drop-5,
+  .drop-6 {
+    position: absolute;
+    width: 144px;
+    height: 144px;
+    background-color: #ffffff;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+  }
+  .drop {
+    position: absolute;
+    top: -86px;
+    right: -120px;
+    width: 144px;
+    height: 144px;
+    background-image: url('../images/tank-bg.png');
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+    z-index: 0;
+  }
+
+  .drop-1 {
+    top: 490px;
+    left: -138px;
+    border-radius: 0px 0px 0px 72px;
+  }
+
+  .drop-2 {
+    top: 346px;
+    left: 7px;
+    border-radius: 0px 72px 0px 0px;
+    z-index: -1;
+  }
+
+  .drop-3 {
+    top: 1010px;
+    left: -220px;
+    border-radius: 72px;
+  }
+  .drop-4 {
+    top: 425px;
+    right: -140px;
+    border-radius: 72px 0px;
+  }
+  .drop-5 {
+    top: 1067px;
+    right: -124px;
+    border-radius: 72px 0px;
+  }
+  .drop-6 {
+    top: 1211px;
+    right: 20px;
+    border-radius: 0px 0px 0px 72px;
   }
 }
